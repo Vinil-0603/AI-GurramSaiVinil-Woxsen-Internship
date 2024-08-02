@@ -11,7 +11,7 @@ def load_data():
     articles = scrape_news()
     return create_embeddings(articles)
 
-st.title("Aluminum Industry News Chatbot")
+st.title("Aluminium Industry News Chatbot")
 
 # Create two columns
 left_column, right_column = st.columns(2)
@@ -19,7 +19,7 @@ left_column, right_column = st.columns(2)
 # Left column: Chatbot interface
 with left_column:
     st.markdown("<h1 style='text-align: center;'>Ask Your Question</h1>", unsafe_allow_html=True)  # Larger, centered title
-    st.markdown("<p style='text-align: center;'>Explore the latest aluminum industry news with our AI-powered chatbot.</p>", unsafe_allow_html=True)  # Descriptive text
+    st.markdown("<p style='text-align: center;'>Explore the latest aluminium industry news with our AI-powered chatbot.</p>", unsafe_allow_html=True)  # Descriptive text
     user_input = st.text_input("Enter your question here:")
 
     if user_input:
