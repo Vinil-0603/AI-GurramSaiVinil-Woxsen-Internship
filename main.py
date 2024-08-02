@@ -3,8 +3,6 @@ from scraper import scrape_news
 from embeddings import create_embeddings
 from chatbot import chat
 
-openai_api_key = st.secrets["OPENAI_API_KEY"]
-
 # Set wide mode by default
 st.set_page_config(layout="wide")
 
