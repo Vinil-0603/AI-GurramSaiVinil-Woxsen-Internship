@@ -16,7 +16,7 @@ def find_most_relevant(query_embedding, embeddings, top_k=3):
 
 def generate_response(query, context):
     messages = [
-        {"role": "system", "content": "You are a helpful assistant that answers questions about the aluminum industry based on recent news."},
+        {"role": "system", "content": "You are a helpful assistant specializing in the aluminum industry. You will be provided with recent news articles as context. Your task is to answer user questions to the best of your ability using the information from the provided articles. If you are unable to find a direct answer in the articles, try to provide relevant information or insights based on what you do know.  Do not state that you do not have the information; instead, focus on extracting what is relevant from the provided context."},
         {"role": "user", "content": f"Context: {context}\n\nQuestion: {query}"}
     ]
     response = openai.ChatCompletion.create(
